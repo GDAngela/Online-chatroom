@@ -13,4 +13,10 @@ This is an online chatroom which surpports :
 
 6 add more friends into current chatroom
 
-Languages:
+
+
+-Build server and client communication using PHP and WebSockt
+
+-MySql to store and manage messages and user informatin 
+
+-frontend: HTML5,css,Javascript and jQuery
