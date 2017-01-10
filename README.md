@@ -1,5 +1,5 @@
 # Online-chatroom
-This is an online chatroom which surpports :
+This is an online chatroom which supports :
 
 1 private and group chat.
 
