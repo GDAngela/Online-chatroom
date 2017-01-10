@@ -1,7 +1,7 @@
 <?php
 
-//citation followed tutorial from https://www.sanwebe.com/2013/05/chat-using-websocket-php-socket
-//this is the tutorial on how to build server and clients
+//Citation: Code is based on tutorial from https://www.sanwebe.com/2013/05/chat-using-websocket-php-socket
+//Added more type to perform different type of message sending
 
 $host = 'localhost'; //host
 $port = '9000'; //port
@@ -88,16 +88,6 @@ while (true) {
 		}
 
 		$buf = @socket_read($changed_socket, 1024, PHP_NORMAL_READ);
-		if ($buf === false) { // check disconnected client
-			// remove client for $clients array
-			$found_socket = array_search($changed_socket, $clients);
-			socket_getpeername($changed_socket, $ip);
-			unset($clients[$found_socket]);
-
-			//notify all users about disconnected connection
-			$response = mask(json_encode(array('type'=>'system', 'message'=>$ip.' disconnected')));
-			send_message($response);
-		}
 	}
 }
 // close the listening socket
