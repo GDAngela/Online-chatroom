@@ -639,50 +639,7 @@ function navigationOnclick(){
     console.log(currBar);
   });
 }
-/*
-//*get chatroom list
-function getChatroomList(){
-  $.ajax({
-    type: "POST",
-    url: "recentChatroom.php",
-    data: { username: username}
-  }).success(function(response){
-      //console.log(response);
 
-    $('#chatroomlist').empty();
-
-    var data = $.parseJSON(response);
-    var chatroomlist=data['chatroomId'];
-    var chatwithlist=data['chatwith'];
-    if(chatroomlist.length!=0){
-      for (i = 0; i < chatroomlist.length; i++){
-        //name the chatroom by people who are in the chatroom
-        var chatroomname="With ";
-        for (j = 0; j < chatwithlist[i].length; j++){
-          chatroomname+=chatwithlist[i][j]+" ";
-        }
-        //add to chatroomlist div
-        var newElement = document.createElement('li');
-        //formated new message
-        newElement.innerHTML =
-        "<li class='bounceInDown chatroom' id='"+chatroomlist[i]+"'>"+
-        "<a href='#' class='clearfix'>"+
-        "<img src='http://bootdey.com/img/Content/user_1.jpg' alt='' class='img-circle'>"+
-        "<div class='friend-name'>"+
-        "<strong>"+chatroomname+"</strong>"+
-        "</div>"+
-        "<div class='last-message text-muted'>Hello, Are you there?</div>"+
-        "</a>"+
-        "</li>"
-        //append new message
-        document.getElementById("chatroomlist").appendChild(newElement);
-
-      }
-    }
-
-  })
-}
-*/
 //*get chatrooms that current user is in
 function getChatroomList(){
   $.ajax({
