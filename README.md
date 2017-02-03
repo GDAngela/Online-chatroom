@@ -24,4 +24,4 @@ This is an online chatroom which supports :
 
 -Backend : Javascript and jQuery
 
--Perform unit test using PHPunit framwork and CURL
+-Perform unit test using PHPunit framework and cURL
