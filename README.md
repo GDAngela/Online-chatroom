@@ -20,6 +20,8 @@ This is an online chatroom which supports :
 
 -MySql to store and manage messages and user informatin 
 
--frontend: HTML5,css,Javascript and jQuery
+-frontend: HTML5,css
 
--Perform unit test using PHPunit framwork and PHP CURL
+-Backend : Javascript and jQuery
+
+-Perform unit test using PHPunit framwork and CURL
