@@ -15,8 +15,11 @@ This is an online chatroom which supports :
 
 
 
+
 -Build server and client communication using PHP and WebSockt
 
 -MySql to store and manage messages and user informatin 
 
 -frontend: HTML5,css,Javascript and jQuery
+
+-Perform unit test using PHPunit framwork and PHP CURL
