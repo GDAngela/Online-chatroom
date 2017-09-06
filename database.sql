@@ -37,7 +37,7 @@ CREATE TABLE UserInChatroom
 (
   Username varchar(255) NOT NULL REFERENCES Users (Username),
   ChatroomId int NOT NULL REFERENCES Chatrooms (ChatroomId),
-  PRIMARY KEY (UserId,ChatroomId)
+  PRIMARY KEY (Username,ChatroomId)
 );
 
 CREATE TABLE Friendrequest
